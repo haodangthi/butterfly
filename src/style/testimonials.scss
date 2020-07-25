@@ -1,0 +1,23 @@
+.testimonials{
+    &_items{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    &_item{
+        &__text{
+            font-style: italic;
+            margin: 0 0 30px 0;
+
+        }
+
+        &__author{
+            font-weight: 600;
+        }
+
+        &__role{
+            font-size: 14px;
+        }
+
+    }
+}

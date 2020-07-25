@@ -1,0 +1,85 @@
+$calendar-text:#4D5055;
+.footer{
+    text-align: center;
+   
+    background-color: $footer-bg;
+    color: white;
+    padding: 50px 0 ;
+
+    &_rights{
+        display: flex;
+        align-items: center;
+        justify-content: space-between ;
+    }
+
+}   
+
+.calendar{
+    margin: 0 auto 50px;
+    width: 900px;
+    color: $calendar-text;
+    border-radius: 20px;
+    height: 566px;
+    background-color: white;
+    
+    display: flex;
+    &_right{
+        
+        &__text{
+            font-size: 24px;
+            font-weight: 500;
+            margin: 10px;
+        }
+        &__time,p{
+            color: $calendar-text;
+        }
+        padding: 34px ;
+        width: 50%;
+        border-right: 1px solid #E5E5E5;
+    }
+    &_left{
+        padding: 34px ;
+        &__title{
+            font-size: 20px;
+            color: $calendar-text;
+            
+        }
+        &__month{
+            font-size: 16px;
+            margin: 24px 0 30px 0;
+        }
+    }
+
+    &_grid{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        &__weekday{
+            text-align: center;
+            line-height: 45px;
+            text-transform: uppercase;
+        }
+        &__day{
+            width: 45px;
+            height: 45px;
+            margin: 5px;
+            position: relative;
+            text-align: center;
+            line-height: 45px;
+        }
+        &__day::before{
+            content: '';
+            width: 45px;
+            height: 45px;
+            background-color: $about-bg;
+            opacity: 0.3;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+           
+        }
+    }
+
+
+}

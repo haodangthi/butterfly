@@ -1,0 +1,30 @@
+.services{
+    
+    &_items{
+        
+        img{
+            width: 70px;
+            height: 80px;
+            margin: 0 0 29px 0;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+        
+    }
+
+    &_card{
+        margin-right:20px;
+        margin-bottom: 50px;
+        &__title{
+            margin-bottom: 23px;
+            font-size: 35px;
+            font-weight: 300;
+        }
+        width: 350px;
+    }
+
+
+    
+}
